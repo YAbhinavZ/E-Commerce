@@ -1,7 +1,7 @@
 # E-Commerce
 A basic E-Commerce web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js).
 
-Features
+## Features ###
 
 User authentication
 
@@ -13,7 +13,7 @@ Order management
 
 Admin panel
 
-Tech Stack
+### Tech Stack  ###
 
 MongoDB
 

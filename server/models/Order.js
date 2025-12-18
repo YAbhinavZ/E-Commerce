@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { Product } from "./Product";
+import { Product } from "./Product.js";
 const orderSchema = new mongoose.Schema({
   items: [
     {
@@ -34,6 +34,10 @@ const orderSchema = new mongoose.Schema({
   address : {
     type : String,
     required : true
+  },
+  status : {
+    type: String,
+    default : "Pending"
   },
   paidAt :{
     type : String,

@@ -8,12 +8,14 @@ export const addAddress = TryCatch( async (req , res)=>{
         user : req.user._id
     })
     res.status(201).json({
-        message : "Address added"
+        message : "Address added",
+        address,
+        phone
     })
 })
 
 export const getAllAddress = TryCatch( async (req,res)=>{
-    const allAddress = await Address.find({user : req.user._id});
+    const allAddress = await Address.find({});
     res.json(allAddress);
 })
 
@@ -31,5 +33,6 @@ export const deleteAddress = TryCatch( async(req,res)=>{
      await address.deleteOne(address);
      res.json({
         message: "address deleted"
+
      })
 })
